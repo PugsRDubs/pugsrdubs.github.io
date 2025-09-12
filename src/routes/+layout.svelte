@@ -8,8 +8,8 @@
 </script>
 
 <div>
-    <a class="title" href="{base}">pugsrdubs</a>
-    <a href="{base}">home</a>
+    <a class="title" href="{base}/">pugsrdubs</a>
+    <a href="{base}/">home</a>
     <a href="{base}/about">about</a>
     <a href="{base}/blog">blog</a>
 
@@ -22,7 +22,7 @@
 
 <style>
     :global(body) {
-        background-image: url("beach-dark.jpeg");
+        background-image: url("/beach-dark.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
