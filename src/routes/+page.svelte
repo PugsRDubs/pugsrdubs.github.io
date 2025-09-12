@@ -1,8 +1,12 @@
+<script>
+  import { base } from "$app/paths";
+
+</script>
 <h2>check out the:</h2>
 
 <div>
-    <a href="about">about</a>
-    <a href="blog">blog</a>
+    <a href="{base}/about">about</a>
+    <a href="{base}/blog">blog</a>
 </div>
 
 <style>
