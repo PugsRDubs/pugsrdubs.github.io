@@ -22,12 +22,11 @@
 
 <style>
     :global(body) {
-        background-image: url("/beach-dark.jpeg");
+        background: url("/beach-dark.jpeg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        margin: 0;
         background-color: rgb(44, 44, 44);
     }
     :global(a, p, li, label) {
