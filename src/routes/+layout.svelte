@@ -2,15 +2,16 @@
     import { fade } from 'svelte/transition';
     import { page } from '$app/state';
     import { resolve } from '$app/paths';
+    import { base } from '$app/paths';
 
     let { children } = $props();
 </script>
 
 <div>
-    <a class="title" href="/">pugsrdubs</a>
-    <a href={resolve("/")}>home</a>
-    <a href={resolve("/about")}>about</a>
-    <a href={resolve("/blog")}>blog</a>
+    <a class="title" href="{base}">pugsrdubs</a>
+    <a href="{base}">home</a>
+    <a href="{base}/about">about</a>
+    <a href="{base}/blog">blog</a>
 
     <hr>
 

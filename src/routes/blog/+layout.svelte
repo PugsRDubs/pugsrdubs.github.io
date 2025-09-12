@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
     let { children } = $props();
 
     const posts = [
@@ -10,5 +12,5 @@
 {@render children()}
 
 {#each posts as post}
-    <a href="blog/{post}">{post}</a>
+    <a href="{base}/blog/{post}">{post}</a>
 {/each}
