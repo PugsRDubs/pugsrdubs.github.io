@@ -7,7 +7,7 @@
     let { children } = $props();
 </script>
 
-<div>
+<div class="block">
     <a class="title" href="{base}/">pugsrdubs</a>
     <a href="{base}/">home</a>
     <a href="{base}/about">about</a>
@@ -47,6 +47,9 @@
     a {
         margin-right: 10px;
     }
+    hr {
+        margin-top: 15px;
+    }
     .title {
         text-decoration-line: none;
         font-family: "Funnel Display", sans-serif;
@@ -55,14 +58,20 @@
         margin-top: 0px;
         margin-bottom: 10px;
     }
-    div {
+    @media (width < 600px) {
+        .title {
+            display: block;
+        }
+    }
+    .block {
         padding: 30px;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
-        width: 600px;
+        width: 80%;
         background-color: rgb(44, 44, 44);
         opacity: 90%;
+        max-width: 600px;
         /*height: 350px;*/
     }
     footer {
