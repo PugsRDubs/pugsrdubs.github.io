@@ -11,6 +11,7 @@
     <a class="title" href="{base}/">pugsrdubs</a>
     <a href="{base}/">home</a>
     <a href="{base}/about">about</a>
+    <a href="{base}/projects">projects</a>
     <a href="{base}/blog">blog</a>
 
     <hr>
@@ -34,6 +35,13 @@
         font-family: "Funnel Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
+    }
+    :global(a) {
+        font-weight: normal;
+        transition: font-weight 300ms;
+    }
+    :global(a):hover {
+        font-weight: bold;
     }
     :global(h2) {
         color: white;
