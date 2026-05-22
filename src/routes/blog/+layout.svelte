@@ -4,7 +4,8 @@
     let { children } = $props();
 
     const posts = [
-        "09-10-25"
+        "05-21-26",
+        "09-10-25",
     ]
 
 </script>
@@ -13,4 +14,5 @@
 
 {#each posts as post}
     <a href="{base}/blog/{post}">{post}</a>
+    <br>
 {/each}
